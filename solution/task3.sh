@@ -1,5 +1,6 @@
-#!/usr/bin/env bash
+!/usr/bin/env bash
 
 # Вывести дату в формате:
 #   13 октября 2023 года, Пятница
-date '+???' -d "$@"
+export LANG=ru_RU.UTF-8
+date '+%d %B %Y года, %A' -d "$@"
